@@ -1,5 +1,6 @@
-package br.com.meu.pet.controller.model;
+package br.com.meu.pet.controller;
 
+import br.com.meu.pet.controller.model.SignUpForm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -7,16 +8,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class SingUpController {
-    private Logger logger = LoggerFactory.getLogger(SingUpController.class);
+public class SignUpController {
+    private Logger logger = LoggerFactory.getLogger(SignUpController.class);
 
-    @GetMapping("/singUp")
+    @GetMapping("/signup")
     public String showSingUpPage(){
-        return "singUp";
+        return "signup";
     }
 
-    @PostMapping("/singUp")
-    public String singUpUser(SingUpForm form){
+    @PostMapping("/signup")
+    public String singUpUser(SignUpForm form){
         logger.info(form.toString());
         if(form.validatePassword() == true && form.validateEmail() == true){
             return "redirect:/home";

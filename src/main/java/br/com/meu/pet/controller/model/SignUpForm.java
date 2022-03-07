@@ -2,14 +2,14 @@ package br.com.meu.pet.controller.model;
 
 import java.util.Objects;
 
-public class SingUpForm {
+public class SignUpForm {
     private String name;
     private String password;
     private String confirmPassword;
     private String email;
     private String confirmEmail;
 
-    public SingUpForm(String name, String password, String confirmPassword, String email, String confirmEmail){
+    public SignUpForm(String name, String password, String confirmPassword, String email, String confirmEmail){
         this.name = name;
         this.password = password;
         this.confirmPassword = confirmPassword;
@@ -73,7 +73,7 @@ public class SingUpForm {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        SingUpForm that = (SingUpForm) o;
+        SignUpForm that = (SignUpForm) o;
         return name.equals(that.name) && password.equals(that.password) && confirmPassword.equals(that.confirmPassword) && email.equals(that.email) && confirmEmail.equals(that.confirmEmail);
     }
 
