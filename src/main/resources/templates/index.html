@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Meu Pet - Cuidado Animal</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}"/>
     <link rel="stylesheet" th:href="@{/css/index.css}"/>
 </head>
 <body>
-    <header>
-        <img>
-        <nav>
-            <a>Entrar</a>
-            <a>Cadastre-se</a>
+    <header class="navbar">
+        <nav class="navbar-menu">
+            <a class="navbar-menu-item" th:href="@{/login}">Entrar</a>
+            <a class="navbar-menu-item" th:href="@{/signup}">Cadastre-se</a>
         </nav>
     </header>
 
-    <main>
-
+    <main class="content">
+        <section class="content-main">
+            <div class="content-main-text">
+                <h1 class="content-main-text-title">Meu Pet</h1>
+                <h2 class="content-main-text-subtitle">Cuidado Animal</h2>
+            </div>
+            <img class="content-main-logo" th:src="@{/images/logo.jpeg}" alt="Imagem da Meu Pet">
+        </section>
     </main>
 
     <footer>
