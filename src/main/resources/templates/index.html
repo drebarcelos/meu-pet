@@ -9,8 +9,9 @@
 <body>
     <header class="navbar">
         <nav class="navbar-menu">
-            <a class="navbar-menu-item" th:href="@{/login}">Entrar</a>
+            <a class="navbar-menu-item" th:href="@{/index}">Home</a>
             <a class="navbar-menu-item" th:href="@{/signup}">Cadastre-se</a>
+            <a class="navbar-menu-item" th:href="@{/login}">Login</a>
         </nav>
     </header>
 
@@ -22,7 +23,9 @@
                 <p class="content-main-text-paragraph">Cuide da saúde e do bem-estar do seu melhor amigo.
                     Encontre todas as informações do seu pet em um único lugar.
                     Adicione vacinas, medicamentos, exames e muito mais.</p>
-                <button class="content-main-text-button" th:href="@{/signup}">Cadastrar</button>
+                <div>
+                    <a class="content-main-text-button-signup" th:href="@{/signup}">Criar Conta</a>
+                </div>
             </div>
             <div class="content-main-logo">
                 <img class="content-main-logo-img" th:src="@{/images/logo.jpg}" alt="Imagem da Meu Pet">
