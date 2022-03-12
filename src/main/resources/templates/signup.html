@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu pet</title>
+    <title>Meu Pet - Cuidado Animal</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}"/>
+    <link rel="stylesheet" th:href="@{/css/geral.css}"/>
+    <link rel="stylesheet" th:href="@{/css/signup.css}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed&family=Sarala&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Página de Cadastro</h1>
-    <form action="/singUp" method="post">
-        <input placeholder="Nome" name="name"/>
-        <input placeholder="Senha" type="password" name="password"/>
-        <input placeholder="Confime sua senha" type="password" name="confirmPassword"/>
-        <input placeholder="Email" name="email"/>
-        <input placeholder="Confime seu email" name="confirmEmail"/>
-        <button type="submit">Enviar</button>
-    </form>
+    <header class="navbar">
+        <nav class="navbar-menu">
+            <a class="navbar-menu-item" th:href="@{/index}">Home</a>
+            <a class="navbar-menu-item" th:href="@{/signup}">Cadastre-se</a>
+            <a class="navbar-menu-item" th:href="@{/login}">Login</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="content-main">
+            <div class="content-main-center">
+                <div class="content-main-imagem">
+                    <img class="content-main-imagem-img" th:src="@{/images/imagem.jpg}" alt="Imagem da Meu Pet">
+                </div>
+                <div class="content-main-text">
+                    <h1 class="content-main-title">Meu Pet</h1>
+                    <p class="content-main-subtitle">Cadastro</p>
+                    <form class="content-main-signup" action="/signup" method="post">
+                        <div>
+                            <input class="content-main-item" placeholder=" Nome" name="name"/>
+                        </div>
+                        <div>
+                            <input class="content-main-item" placeholder=" Senha" type="password" name="password"/>
+                        </div>
+                        <div>
+                            <input class="content-main-item" placeholder=" Confime sua senha" type="password" name="confirmPassword"/>
+                        </div>
+                        <div>
+                            <input class="content-main-item" placeholder=" Email" name="email"/>
+                        </div>
+                        <div>
+                            <input class="content-main-item" placeholder=" Confime seu email" name="confirmEmail"/>
+                        </div>
+                        <div>
+                            <button class="content-main-signup-button-submit" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
