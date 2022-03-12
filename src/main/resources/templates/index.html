@@ -6,6 +6,9 @@
     <link rel="stylesheet" th:href="@{/css/reset.css}"/>
     <link rel="stylesheet" th:href="@{/css/geral.css}"/>
     <link rel="stylesheet" th:href="@{/css/index.css}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed&family=Sarala&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -21,20 +24,20 @@
             <div class="content-main-text">
                 <h1 class="content-main-text-title">Meu Pet</h1>
                 <h2 class="content-main-text-subtitle">Cuidado Animal</h2>
-                <p class="content-main-text-paragraph">Cuide da saúde e do bem-estar do seu melhor amigo.
-                    Encontre todas as informações do seu pet em um único lugar.
-                    Adicione vacinas, medicamentos, exames e muito mais.</p>
-                <div>
+                <p class="content-main-text-paragraph">Cuide da saúde e do bem-estar do seu melhor amigo.<br>
+                    De uma forma prática, encontre todas as informações do seu pet em um único lugar.
+                    Com um completo conjunto de recursos adicione vacinas, medicamentos, exames e muito mais.</p>
+                <div class="content-main-text-button">
                     <a class="content-main-text-button-signup" th:href="@{/signup}">Criar Conta</a>
                 </div>
             </div>
             <div class="content-main-logo">
-                <img class="content-main-logo-img" th:src="@{/images/logo.jpg}" alt="Imagem da Meu Pet">
+                <img class="content-main-logo-img" th:src="@{/images/logo.jpg}" alt="Logo da Meu Pet">
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 
