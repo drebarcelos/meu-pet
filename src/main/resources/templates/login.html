@@ -6,6 +6,9 @@
     <link rel="stylesheet" th:href="@{/css/reset.css}"/>
     <link rel="stylesheet" th:href="@{/css/geral.css}"/>
     <link rel="stylesheet" th:href="@{/css/login.css}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed&family=Sarala&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -23,21 +26,21 @@
                 <p class="content-main-subtitle">Login</p>
                 <form class="content-main-login" action="/login" method="post">
                     <div>
-                        <input placeholder=" Nome" name="name" class="content-main-login-nome"/>
+                        <input class="content-main-item" placeholder=" Nome" name="name"/>
                     </div>
                     <div>
-                        <input placeholder=" Senha" type="password" name="password" class="content-main-login-password"/>
+                        <input class="content-main-item" placeholder=" Senha" type="password" name="password"/>
                     </div>
                     <div>
-                        <button type="submit" class="content-main-login-button-submit">Entrar</button>
-                    </div>
-                    <div>
-                        <p class="content-main-login-text">Não possui uma conta?</p>
-                        <div class="content-main-login-button-signup">
-                            <a class="content-main-text-button-signup" th:href="@{/signup}">Cadastre-se agora</a>
-                        </div>
+                        <button class="content-main-login-button-submit" type="submit">Entrar</button>
                     </div>
                 </form>
+                <div class="content-main-text">
+                    <p class="content-main-login-text">Não possui uma conta?</p>
+                    <div class="content-main-login-button-signup">
+                        <a class="content-main-text-button-signup" th:href="@{/signup}">Cadastre-se agora</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
