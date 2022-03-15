@@ -1,0 +1,64 @@
+.content-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 900px;
+    background-color: rgba(241, 233, 255, 0.925);
+}
+
+.content-main-imagem {
+    width: 30%;
+    height: 900px;
+}
+
+.content-main-imagem-img {
+    width: 100%;
+    height: 900px;
+}
+
+.content-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+    height: 900px;
+}
+
+.content-main-text-title {
+    margin-top: 90px;
+    font-family: 'Knewave', cursive;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #222329
+}
+
+.content-main-petregister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.content-main-item-especial {
+    width: 258px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.content-main-signup-button-submit {
+    margin-top: 30px;
+    width: 110px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.content-main-bc {
+    background: linear-gradient(68.15deg, #f0d046 16.62%, #f3be0f 85.61%);
+    width: 30%;
+    height: 900px;
+}
