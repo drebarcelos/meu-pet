@@ -13,6 +13,50 @@
         </nav>
     </header>
 
+    <main class="content">
+        <section class="content-main">
+            <div class="content-main-imagem">
+                <img class="content-main-imagem-img" th:src="@{/images/imagem3.jpg}" alt="imagem3 da Meu Pet">
+            </div>
+            <div class="content-main-text">
+                <h1 class="content-main-text-title">Meu Pet</h1>
+                <form class="content-main-petregister" action="/petregister" method="post">
+                    <div>
+                        <input class="content-main-item" placeholder=" Nome" name="name"/>
+                    </div>
+                    <div>
+                        <select class="content-main-item-especial">
+                            <option selected>Selecione a especie...</option>
+                            <option value="1">Felina</option>
+                            <option value="2">Canina</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="content-main-item" placeholder=" Raça" name="raca"/>
+                    </div>
+                    <div>
+                        <select class="content-main-item-especial">
+                            <option selected>Selecione o sexo...</option>
+                            <option value="1">Fêmea</option>
+                            <option value="2">Macho</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="content-main-item" placeholder=" Peso" name="peso"/>
+                    </div>
+                    <div>
+                        <input class="content-main-item" placeholder=" Data de nascimento" name="dataDeNascimento"/>
+                    </div>
+                    <div>
+                        <button class="content-main-signup-button-submit" type="submit">Cadastrar Pet</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content-main-bc">
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
 
     </footer>
